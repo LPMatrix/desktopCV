@@ -14,3 +14,5 @@
 * Sketch 
 * Sharpen
 * Blur
+* Rotate
+* Grayscale

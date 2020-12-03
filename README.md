@@ -9,3 +9,8 @@
 
 ## Design File
 * https://www.figma.com/file/ggHXlMCyhh2mjmJffK4xfP/desktopCV?node-id=0%3A1
+
+## Techniques
+* Sketch 
+* Sharpen
+* Blur

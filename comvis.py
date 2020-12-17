@@ -26,6 +26,9 @@ frame_5b = tkinter.Frame(frame_6) #altered image
 now = datetime.now()
 
 def packs():
+    '''
+    THIS function packs all the tkinter windows to enable a display
+    '''
     container.pack(side="left", padx=40, pady=20)
     frame_1.pack(padx=0, pady=30) #header text
     frame_2.pack(padx=0, pady=10) #select photo
@@ -43,6 +46,13 @@ namelabel.config(font=("courier", 17))
 namelabel.pack()
 
 def get_img():
+    '''
+    THIS function:
+    -opens images in PIL format
+    -displays them on a tkinter window
+    -converts the image to cv2 format
+    -function is assigned to the Select_Photo buttion
+    '''
     global cv_img
     global image_lbl
     global photo
@@ -59,6 +69,9 @@ slt_btn = tkinter.Button(master=frame_2, text = "Select Photo", bg = "white", fg
 slt_btn.pack()
 
 def del_img():
+    '''
+    THIS function is for deleting a selected image from tkinter window
+    '''
     image_lbl.config(image="")
     image_lbl.image=" "
 del_btn = tkinter.Button(master=frame_5a, text = "Remove Photo", bg = "purple", fg="white", width=18, height=2,command=del_img)
@@ -71,6 +84,11 @@ techniq.current(5)
 techniq.pack()
 
 def manip():
+    '''
+    THIS Function:
+    -This function applies various effect to a selected image
+    -converts the image to PIL format from cv2 format to enable display in tkinter window
+    '''
     global alt_Img_lbl
     global alt_img
     if techniq.get() == "Select Technique":
@@ -99,6 +117,9 @@ mnp_btn = tkinter.Button(master=frame_4, text = "Manipulate", bg = "purple", fg=
 mnp_btn.pack()
 
 def clear_eff():
+    '''
+    This function clears the altared image
+    '''
     alt_Img_lbl.config(image="")
     alt_Img_lbl.image=" "
 clr_btn = tkinter.Button(master=frame_5b, text = "Clear Effect", bg = "purple", fg="white", width=18, height=2,command=clear_eff)
